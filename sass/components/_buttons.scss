@@ -1,0 +1,53 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all 0.2s;
+        position: relative;
+        font-size: $default-font-size;
+
+        border: none;
+        cursor: pointer;
+    }
+
+}
+
+.btn-circle {
+    &,
+    &:link,
+    &:visited {
+        padding: 1.05rem 2.11rem;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 1000rem;
+        position: relative;
+        border: none;
+        cursor: pointer;
+        font-size: 3rem;
+        text-align: center;
+        transition: all 0.4s;
+    }
+
+    &:hover {
+        background-color: $color-grey-light-2;
+    }
+}
+
+.button-row {
+    list-style-type: none;
+    overflow: hidden;
+    float: left;
+    display: inline;
+
+    &__icon {
+        display: inline-block;
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+    }
+}

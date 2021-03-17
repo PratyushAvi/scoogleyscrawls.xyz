@@ -1,0 +1,29 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: $color-black;
+    padding: 3rem;
+}
+
+.heading-primary {
+    color: $color-black;
+    font-size: 6.5rem;
+    font-weight: 400;
+
+    &--main {
+        display: inline-block;
+    }
+
+    &--sub {
+        font-weight: 300;
+        display: inline-block;
+    }
+}
+
+.title {
+    color: $color-black;
+    font-size: 3rem;
+    font-weight: 700;
+}

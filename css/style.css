@@ -1,0 +1,120 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #000;
+  padding: 3rem; }
+
+.heading-primary {
+  color: #000;
+  font-size: 6.5rem;
+  font-weight: 400; }
+  .heading-primary--main {
+    display: inline-block; }
+  .heading-primary--sub {
+    font-weight: 300;
+    display: inline-block; }
+
+.title {
+  color: #000;
+  font-size: 3rem;
+  font-weight: 700; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+
+.u-margin-top-big {
+  margin-bottom: 8rem !important; }
+
+.u-margin-top-huge {
+  margin-bottom: 10rem !important; }
+
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer; }
+
+.btn-circle, .btn-circle:link, .btn-circle:visited {
+  padding: 1.05rem 2.11rem;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 1000rem;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  font-size: 3rem;
+  text-align: center;
+  transition: all 0.4s; }
+
+.btn-circle:hover {
+  background-color: #eee; }
+
+.button-row {
+  list-style-type: none;
+  overflow: hidden;
+  float: left;
+  display: inline; }
+  .button-row__icon {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0;
+    padding: 0; }
+
+.row {
+  max-width: 90%;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(6rem + 2 * ((100% - 2 * 6rem) / 3)); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc(6rem + 2 * ((100% - 3 * 6rem) / 4)); }
+  .row .col-3-of-4 {
+    width: calc(2 * 6rem + 3 * ((100% - 3 * 6rem) / 4)); }
+
+.header {
+  height: 95vh; }
