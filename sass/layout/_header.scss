@@ -3,6 +3,33 @@
     // background-image: url(../assets/images/bg.png);
     // background-size: cover;
     // background-position: top;
-    // position: relative;
-    // width: 100%;
+    position: relative;
+    top: 50%;
+    width: 100%;
+
+    &-box {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: inherit;
+
+        &__heading {
+            margin-left: 4%;
+        }
+    }
+
+    &-card {
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        height: 30vh;
+        width: 30vw;
+        border-radius: 3rem;
+        //border: 2.5px solid $color-black;
+        padding: 2.4rem 1rem;
+        overflow: hidden;
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+        
+    }
 }

@@ -9,10 +9,12 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  width: 95%;
+  margin: 0 auto; }
 
 body {
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -21,7 +23,7 @@ body {
 
 .heading-primary {
   color: #000;
-  font-size: 6.5rem;
+  font-size: 8rem;
   font-weight: 400; }
   .heading-primary--main {
     display: inline-block; }
@@ -29,10 +31,47 @@ body {
     font-weight: 300;
     display: inline-block; }
 
+.heading-tertiary {
+  color: #000;
+  font-size: 3rem; }
+  .heading-tertiary--main {
+    display: inline-block;
+    padding: 0;
+    font-weight: 700; }
+  .heading-tertiary--sub {
+    display: inline-block;
+    font-weight: 300; }
+
+.heading-secondary {
+  color: #000;
+  font-size: 5rem;
+  font-weight: 400; }
+  .heading-secondary--main {
+    display: inline-block;
+    padding: 0;
+    font-weight: 700; }
+  .heading-secondary--sub {
+    display: inline-block;
+    font-weight: 300; }
+
 .title {
   color: #000;
-  font-size: 3rem;
+  font-size: 3.3rem;
   font-weight: 700; }
+  .title--sub {
+    font-weight: 200; }
+
+.card-details--content {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1rem; }
+
+.card-details--tag {
+  display: block;
+  margin-bottom: -1rem;
+  font-style: 0.8rem;
+  font-weight: 400; }
 
 .u-center-text {
   text-align: center !important; }
@@ -67,7 +106,7 @@ body {
 .btn-circle, .btn-circle:link, .btn-circle:visited {
   padding: 1.05rem 2.11rem;
   text-decoration: none;
-  display: inline-block;
+  display: block;
   border-radius: 1000rem;
   position: relative;
   border: none;
@@ -79,19 +118,34 @@ body {
 .btn-circle:hover {
   background-color: #eee; }
 
-.button-row {
+.button-row__list {
   list-style-type: none;
-  overflow: hidden;
   float: left;
-  display: inline; }
-  .button-row__icon {
-    display: inline-block;
-    text-decoration: none;
-    margin: 0;
-    padding: 0; }
+  margin-left: 2rem; }
+
+.button-row__element {
+  list-style-type: none;
+  display: inline-block; }
+  .button-row__element:not(:last-child) {
+    margin-right: 8rem; }
+
+.button-row__icon {
+  padding: 0rem;
+  color: #000; }
+
+.photo {
+  width: 100%; }
+  .photo__profile {
+    width: 100%;
+    margin-right: 6rem;
+    margin-top: 1rem;
+    backface-visibility: hidden; }
+  .photo__barcode {
+    width: 100%;
+    margin-top: 1rem; }
 
 .row {
-  max-width: 90%;
+  max-width: 95%;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
@@ -102,19 +156,57 @@ body {
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
-      margin-right: 6rem; }
+      margin-right: 2rem; }
   .row .col-1-of-2 {
-    width: calc((100% - 6rem) / 2); }
+    width: calc((100% - 2rem) / 2); }
   .row .col-1-of-3 {
-    width: calc((100% - 2 * 6rem) / 3); }
+    width: calc((100% - 2 * 2rem) / 3); }
   .row .col-2-of-3 {
-    width: calc(6rem + 2 * ((100% - 2 * 6rem) / 3)); }
+    width: calc(2rem + 2 * ((100% - 2 * 2rem) / 3)); }
   .row .col-1-of-4 {
-    width: calc((100% - 3 * 6rem) / 4); }
+    width: calc((100% - 3 * 2rem) / 4); }
   .row .col-2-of-4 {
-    width: calc(6rem + 2 * ((100% - 3 * 6rem) / 4)); }
+    width: calc(2rem + 2 * ((100% - 3 * 2rem) / 4)); }
   .row .col-3-of-4 {
-    width: calc(2 * 6rem + 3 * ((100% - 3 * 6rem) / 4)); }
+    width: calc(2 * 2rem + 3 * ((100% - 3 * 2rem) / 4)); }
 
 .header {
-  height: 95vh; }
+  height: 95vh;
+  position: relative;
+  top: 50%;
+  width: 100%; }
+  .header-box {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: inherit; }
+    .header-box__heading {
+      margin-left: 4%; }
+  .header-card {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    height: 30vh;
+    width: 30vw;
+    border-radius: 3rem;
+    padding: 2.4rem 1rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.project {
+  height: 90vh;
+  position: relative;
+  top: 5%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .project-card {
+    position: relative;
+    margin: 5% 15%;
+    height: 40rem;
+    width: 35rem;
+    border-radius: 1rem;
+    padding: 2.4rem 1rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }

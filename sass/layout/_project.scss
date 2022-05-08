@@ -1,0 +1,21 @@
+.project {
+    height: 90vh;
+    position: relative;
+    top: 5%;
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    &-card {
+        position: relative;
+        margin: 5% 15%;
+        height: 40rem;
+        width: 35rem;
+        border-radius: 1rem;
+        // border: 2.5px solid $color-black;
+        padding: 2.4rem 1rem;
+        overflow: hidden;
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    }
+}

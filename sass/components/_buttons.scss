@@ -23,7 +23,7 @@
     &:visited {
         padding: 1.05rem 2.11rem;
         text-decoration: none;
-        display: inline-block;
+        display: block;
         border-radius: 1000rem;
         position: relative;
         border: none;
@@ -39,15 +39,23 @@
 }
 
 .button-row {
-    list-style-type: none;
-    overflow: hidden;
-    float: left;
-    display: inline;
+    &__list {
+        list-style-type: none;
+        float: left;
+        margin-left: 2rem;
+    }
+
+    &__element {
+        list-style-type: none;
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 8rem;
+        }
+    }
 
     &__icon {
-        display: inline-block;
-        text-decoration: none;
-        margin: 0;
-        padding: 0;
+        padding: 0rem;
+        color: $color-black;
     }
 }
