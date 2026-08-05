@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@layer components {
+    .round-button {
+        @apply transition ease-in-out duration-[0.5s] hover:bg-[#ddd] sm:w-[50px] sm:h-[50px] w-[30px] h-[30px] rounded-[50%] bg-[#eee] sm:bg-[#fff] grid content-center;
+    }
+
+    .link {
+        @apply underline decoration-dashed underline-offset-3;
+    }
+
+    /*
+     * Swaps its own text for "work in progress" on hover. CSS can't replace a
+     * text node, so the real text is hidden (kept in the layout, and still
+     * readable by screen readers) and the replacement is drawn over it.
+     */
+    .tbd {
+        @apply relative cursor-help transition ease-in-out duration-[0.5s];
+    }
+
+    .tbd:hover {
+        @apply invisible;
+    }
+
+    .tbd:hover::after {
+        content: "work in progress";
+        @apply visible absolute left-0 top-0 w-max;
+    }
+}

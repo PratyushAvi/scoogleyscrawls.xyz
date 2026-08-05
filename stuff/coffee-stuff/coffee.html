@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../../css/output.css">
+
+    <title>Coffee | scoogleyscrawls.xyz</title>
+
+    <script type="module" src="coffee.js" defer></script>
+</head>
+
+<body>
+    <div class="w-screen overflow-hidden mb-[12px] grid grid-cols-2 gap-2">
+        <p class="text-4xl p-[20px]">my Coffee Ledger</p>
+        <div class="col-span-1 text-right p-[20px] font-serif">
+            <p><a class="text-2xl link" href="../../index.html">fun stuff</a></p>
+            <a class="text-2xl link" href="https://pratyushavi.com">pratyushavi.com</a>
+        </div>
+    </div>
+    <div class="h-[90vh] w-screen grid grid-cols-1 grid-rows-[auto_1fr]">
+        <div class="flex items-center gap-[10px] px-[30px] py-[10px] text-sm border-b">
+            <label for="sort-by" class="font-semibold">Sort by</label>
+            <select id="sort-by" class="border rounded-full px-[10px] py-[4px]">
+                <option value="date-desc">Newest first</option>
+                <option value="date-asc">Oldest first</option>
+                <option value="bagName">Bag name (A–Z)</option>
+                <option value="origin">Origin (A–Z)</option>
+                <option value="roaster">Roaster (A–Z)</option>
+                <option value="location">Location (A–Z)</option>
+            </select>
+            <button id="toggle-all" type="button" class="border rounded-full px-[10px] py-[4px] cursor-pointer bg-black text-white">
+                Expand / collapse all
+            </button>
+        </div>
+        <div class="col-span-1 min-h-0 overflow-scroll p-[10px]">
+            <div id="coffee-list"></div>
+        </div>
+
+        <!-- In order for this bit to go live, update the grid cols -->
+        <!-- <div class="col-span-1">
+            map + stats
+        </div> -->
+    </div>
+
+</body>
+</html>
